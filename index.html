@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Calculator|BMI</title>
-</head>
-<body>
-    
-</body>
-<script src="js/script.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Kalkulator|BMI</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <div class="header">
+            <h1>Kalkulator|BMI</h1>
+        </div>
+        <!-- CLOSE HEADER -->
+        <!-- MAIN -->
+        <div class="main">
+            <div class="main-container">
+                <div class="container-item">
+                    <h2>Isi Formulir Berikut</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima exercitationem facilis modi est
+                        deleniti pariatur quas itaque voluptatem! Dicta, incidunt totam at blanditiis libero ipsa.</p>
+                    <div class="form-input">
+                        <form action="">
+                            <!-- Jenis_kelamin -->
+                            <label for="jenis-kelamin">Jenis Kelamin</label>
+                            <div class="jenis_kelamin">
+                                <input type="radio" name="jenis_kelamin" id="laki-laki" value="Laki-laki">
+                                <label for="laki-laki">Laki-laki</label><br>
+                                <input type="radio" name="jenis_kelamin" id="perempuan" value="Perempuan">
+                                <label for="perempuan">Perempuan</label><br>
+                            </div>
+                            <br>
+                            <div class="usia">
+                                <label for="usia">Usia(Tahun)</label>
+                                <input type="number" name="usia" id="usia">
+                            </div>
+                            <div class="berat_badan">
+                                <label for="berat-badan">Berat badan(kg)</label>
+                                <input type="number" name="berat_badan" id="berat-badan">
+                            </div>
+                            <div class="tinggi_badan">
+                                <label for="tinggi-badan">Tinggi badan(cm)</label>
+                                <input type="number" name="tinggi_badan" id="tinggi-badan">
+                            </div>
+                            <br>
+                            <div class="aksi">
+                                <button type="submit" class="hitung" id="hitung">Hitung BMI</button>
+                                <button type="submit" class="reset" id="reset">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="container-item">
+                    <h2>Hasil</h2>
+                    <div class="hasil">
+                        <span class="total"></span>
+                        <span class="kategori"></span>
+                        <h2 class="risiko"></h2>
+                        <ul class="list-penyakit"></ul>
+                        <p class="saran"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CLOSE MAIN -->
+        <!-- FOOTER -->
+        <div class="footer">
+        </div>
+        <!-- CLOSE FOOTER -->
+    </body>
+    <script src="js/script.js"></script>
 </html>
