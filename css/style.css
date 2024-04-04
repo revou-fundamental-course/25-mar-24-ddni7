@@ -1,143 +1,128 @@
-* {
-    box-sizing: border-box;
-}
-
-/* Header */
-.header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 20px 0;
+header>h1 {
     text-align: center;
 }
 
-.header h1 {
-    margin: 0;
+p {
+    text-align: justify;
 }
 
-/* Main Container */
-.main .main-container {
+.main-container {
     display: flex;
-    justify-content: space-around;
 }
 
-/* Container Item */
 .container-item {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    width: 45%;
-    margin-bottom: 20px;
-    overflow: hidden;
-    margin-top: 20px;
+    width: 100%;
+    padding: 24px;
 }
 
-.container-item h2 {
-    color: #007bff;
-    margin-top: 0;
+.container-item>h2 {
     text-align: center;
 }
 
-.form-input {
-    background-color: #f8f9fa;
-    padding: 20px;
+/* Form display */
+.container-form {
+    text-align: left;
+    background-color: #e7e7e7;
+    padding: 24px;
 }
 
-.form-input label {
-    display: block;
-    margin-bottom: 10px;
+.container-form>div {
+    padding: 8px;
 }
 
-.form-input input[type="number"] {
-    width: calc(100% - 24px);
+.form-item {
+    height: 24px;
+    border: 0px;
+    border-radius: 8px;
+    background-color: white;
+    margin-top: 10px;
 }
 
-.jenis_kelamin {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
+
+
+/*Display Style*/
+.container-result {
+    text-align: center;
+    background-color: #e7e7e7;
+    padding-top: 8px;
+    padding-bottom: 24px;
 }
 
-.jenis_kelamin input[type="radio"] {
-    margin-right: 5px;
-}
-
-input[type=number] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-
-.aksi {
-    display: flex;
-    justify-content: space-between;
+.result-penyakit {
+    text-align: center;
+    background-color: #e7e7e7;
+    padding-top: 8px;
+    padding-bottom: 24px;
 }
 
 button {
-    width: 48%;
-    padding: 7px;
-    border: none;
-    border-radius: 5px;
+    border: 0px;
+    height: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: #d4d4d4;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.hitung {
-    background-color: #589be4;
+#calculate-button {
+    background-color: #293fbd;
     color: #fff;
 }
 
-.reset {
-    background-color: #dc3545;
+#calculate-button:hover {
+    background-color: #2ab1ff;
+}
+
+#reset-button {
+    background-color: #d4d4d4;
     color: #fff;
+}
+
+#reset-button:hover {
+    background-color: #bd2929;
 }
 
 button:hover {
-    background-color: #1f53e2;
+    background-color: #28d312;
 }
 
-.reset:hover {
-    background-color: #e21f29;
-}
-
-/* Hasil */
-.hasil {
-    background-color: #f8f9fa;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
-}
-
-.hasil h2 {
-    color: #007bff;
-}
-
-.hasil .total {
-    font-size: 24px;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.hasil .kategori {
-    font-size: 18px;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.list-penyakit {
-    text-align: left;
-    padding-left: 20px;
-}
-
-.saran {
-    margin-top: 20px;
-}
-
-/* Footer */
-.footer {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
+footer {
+    background-color: #e7e7e7;
+    color: #000000;
     padding: 20px 0;
-    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media a {
+    color: #000000;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #55acee;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .container-item {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .form-item {
+        width: 100%;
+    }
 }
