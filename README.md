@@ -3,4 +3,4 @@
 
 ## Screenshot
 
-!(assets/Screenshot.png)
+[Tampilan](assets/img/Screenshot.png)
