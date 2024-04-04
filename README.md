@@ -3,4 +3,4 @@
 
 ## Screenshot
 
-!(assets/img/Screenshot.png)
+!(assets/Screenshot.png)
